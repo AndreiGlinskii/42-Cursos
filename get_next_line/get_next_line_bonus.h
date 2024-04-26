@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.h                              :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aglinski <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 17:08:40 by aglinski          #+#    #+#             */
-/*   Updated: 2024/04/18 17:08:43 by aglinski         ###   ########.fr       */
+/*   Created: 2024/04/24 18:07:35 by aglinski          #+#    #+#             */
+/*   Updated: 2024/04/24 18:07:37 by aglinski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 512 /*por defecto se establece en 512 bytes
 si no se define previamente*/
@@ -19,6 +19,10 @@ si no se define previamente*/
 # if BUFFER_SIZE > 1024 || BUFFER_SIZE < 1
 #  undef BUFFER_SIZE
 #  define BUFFER_SIZE 512
+# endif
+
+# ifndef MAX_OPEN_FILES
+#  define MAX_OPEN_FILES 512
 # endif
 
 # include <unistd.h>

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aglinski <aglinski@student.42madrid.fr>    +#+  +:+       +#+        */
+/*   By: aglinski <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 15:42:58 by aglinski          #+#    #+#             */
-/*   Updated: 2024/04/18 15:43:00 by aglinski         ###   ########.fr       */
+/*   Created: 2024/04/24 18:17:32 by aglinski          #+#    #+#             */
+/*   Updated: 2024/04/24 18:17:33 by aglinski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,3 @@ char	*ft_strjoin_gnl(char *s1, char *s2, int *eol_loc)
 		*eol_loc = 0;
 	return (res);
 }
-
-/* se utiliza para unir dos cadenas de caracteres y mantener un seguimiento
-de la posicion del salto de linea (\n)*/
